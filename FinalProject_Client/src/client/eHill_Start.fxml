@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="909.0" layoutX="-3.0">
+         <image>
+            <Image url="@../Images/eHill_Start.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="startButton_Start" layoutX="397.0" layoutY="278.0" mnemonicParsing="false" onAction="#startButtonPressed_Start" prefHeight="45.0" prefWidth="106.0" text="Start" />
+      <Label alignment="CENTER" layoutX="381.0" layoutY="35.0" prefHeight="63.0" prefWidth="139.0" text="eHill">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="quitButton_Start" layoutX="-3.0" mnemonicParsing="false" onAction="#quitButtonPressed_Start" prefHeight="40.0" prefWidth="120.0" text="Quit" />
+   </children>
+</Pane>

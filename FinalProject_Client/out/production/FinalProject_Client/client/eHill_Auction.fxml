@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Controller">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1200.0" prefWidth="900.0">
+         <children>
+            <ImageView fitHeight="1200.0" fitWidth="900.0">
+               <image>
+                  <Image url="@../Images/eHill_Auction.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="378.0" layoutY="17.0" prefHeight="49.0" prefWidth="144.0" text="eHill">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="362.0" layoutX="342.0" layoutY="712.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="362.0" layoutX="52.0" layoutY="127.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="362.0" layoutX="333.0" layoutY="127.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="362.0" layoutX="61.0" layoutY="712.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="362.0" layoutX="614.0" layoutY="712.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="362.0" layoutX="614.0" layoutY="127.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+            <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="76.0" layoutY="166.0" onMouseClicked="#item1Detail">
+               <image>
+                  <Image url="@../Images/Car.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="quitButton_Auction" layoutY="1.0" mnemonicParsing="false" onAction="#quitButton_AuctionPressed" prefHeight="40.0" prefWidth="120.0" text="Quit" />
+            <Label alignment="CENTER" layoutX="88.0" layoutY="127.0" prefHeight="31.0" prefWidth="176.0" text="Car">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="item1Price" alignment="CENTER" layoutX="68.0" layoutY="308.0" prefHeight="37.0" prefWidth="216.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="item1Time" alignment="CENTER" layoutX="70.0" layoutY="385.0" prefHeight="35.0" prefWidth="215.0" text="Label" />
+            <TextField fx:id="item1NewPrice" layoutX="60.0" layoutY="437.0" prefHeight="32.0" prefWidth="148.0" />
+            <Button fx:id="bidButton1" layoutX="230.0" layoutY="438.0" mnemonicParsing="false" onAction="#bidButton1Pressed" prefHeight="30.0" prefWidth="68.0" text="Bid" />
+            <Label fx:id="userName_Auction" alignment="CENTER" layoutX="519.0" layoutY="15.0" prefHeight="55.0" prefWidth="122.0">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="370.0" layoutY="127.0" prefHeight="31.0" prefWidth="176.0" text="Desk">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="651.0" layoutY="127.0" prefHeight="31.0" prefWidth="176.0" text="House">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="88.0" layoutY="530.0" prefHeight="31.0" prefWidth="176.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="362.0" layoutY="530.0" prefHeight="31.0" prefWidth="176.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="634.0" layoutY="530.0" prefHeight="31.0" prefWidth="176.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="358.0" layoutY="158.0" onMouseClicked="#item2Detail">
+               <image>
+                  <Image url="@../Images/Desk.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="639.0" layoutY="158.0" onMouseClicked="#item3Detail">
+               <image>
+                  <Image url="@../Images/House.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="86.0" layoutY="751.0" onMouseClicked="#item4Detail">
+               <image>
+                  <Image url="@../Images/Laptop.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="367.0" layoutY="751.0" onMouseClicked="#item5Detail">
+               <image>
+                  <Image url="@../Images/Mario.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="639.0" layoutY="751.0" onMouseClicked="#item6Detail">
+               <image>
+                  <Image url="@../Images/Phone.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="item2Price" alignment="CENTER" layoutX="342.0" layoutY="308.0" prefHeight="37.0" prefWidth="216.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="item3Price" alignment="CENTER" layoutX="623.0" layoutY="308.0" prefHeight="37.0" prefWidth="216.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="item4Price" alignment="CENTER" layoutX="78.0" layoutY="900.0" prefHeight="37.0" prefWidth="216.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="88.0" layoutY="712.0" prefHeight="31.0" prefWidth="176.0" text="Laptop">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="370.0" layoutY="712.0" prefHeight="31.0" prefWidth="176.0" text="Mario">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="651.0" layoutY="712.0" prefHeight="31.0" prefWidth="176.0" text="Phone">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="item5Price" alignment="CENTER" layoutX="350.0" layoutY="900.0" prefHeight="37.0" prefWidth="216.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="item6Price" alignment="CENTER" layoutX="631.0" layoutY="900.0" prefHeight="37.0" prefWidth="216.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="item2Time" alignment="CENTER" layoutX="351.0" layoutY="393.0" prefHeight="35.0" prefWidth="215.0" text="Label" />
+            <Label fx:id="item3Time" alignment="CENTER" layoutX="632.0" layoutY="393.0" prefHeight="35.0" prefWidth="215.0" text="Label" />
+            <Label fx:id="item4Time" alignment="CENTER" layoutX="79.0" layoutY="970.0" prefHeight="35.0" prefWidth="215.0" text="Label" />
+            <Label fx:id="item5Time" alignment="CENTER" layoutX="360.0" layoutY="970.0" prefHeight="35.0" prefWidth="215.0" text="Label" />
+            <Label fx:id="item6Time" alignment="CENTER" layoutX="632.0" layoutY="970.0" prefHeight="35.0" prefWidth="215.0" text="Label" />
+            <TextField fx:id="item2NewPrice" layoutX="342.0" layoutY="437.0" prefHeight="32.0" prefWidth="148.0" />
+            <TextField fx:id="item3NewPrice" layoutX="623.0" layoutY="437.0" prefHeight="32.0" prefWidth="148.0" />
+            <TextField fx:id="item4NewPrice" layoutX="76.0" layoutY="1024.0" prefHeight="32.0" prefWidth="148.0" />
+            <TextField fx:id="item5NewPrice" layoutX="360.0" layoutY="1024.0" prefHeight="32.0" prefWidth="148.0" />
+            <TextField fx:id="item6NewPrice" layoutX="631.0" layoutY="1024.0" prefHeight="32.0" prefWidth="148.0" />
+            <Button fx:id="bidButton2" layoutX="512.0" layoutY="438.0" mnemonicParsing="false" onAction="#bidButton2Pressed" prefHeight="30.0" prefWidth="68.0" text="Bid" />
+            <Button fx:id="bidButton3" layoutX="793.0" layoutY="438.0" mnemonicParsing="false" onAction="#bidButton3Pressed" prefHeight="30.0" prefWidth="68.0" text="Bid" />
+            <Button fx:id="bidButton4" layoutX="242.0" layoutY="1024.0" mnemonicParsing="false" onAction="#bidButton4Pressed" prefHeight="30.0" prefWidth="68.0" text="Bid" />
+            <Button fx:id="bidButton5" layoutX="524.0" layoutY="1024.0" mnemonicParsing="false" onAction="#bidButton5Pressed" prefHeight="30.0" prefWidth="68.0" text="Bid" />
+            <Button fx:id="bidButton6" layoutX="793.0" layoutY="1024.0" mnemonicParsing="false" onAction="#bidButton6Pressed" prefHeight="30.0" prefWidth="68.0" text="Bid" />
+            <Button fx:id="onlineButton" mnemonicParsing="false" onAction="#onlineButtonPressed" prefHeight="600.0" prefWidth="900.0" text="Get Online">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

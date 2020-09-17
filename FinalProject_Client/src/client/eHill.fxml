@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Controller">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="907.0">
+         <image>
+            <Image url="@../Images/eHill_Login.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="logInButton" layoutX="408.0" layoutY="300.0" mnemonicParsing="false" onAction="#logInButtonClicked" prefHeight="38.0" prefWidth="106.0" text="Log In" />
+      <Button fx:id="newAccountButton" layoutX="292.0" layoutY="407.0" mnemonicParsing="false" onAction="#newAccountButtonClicked" prefHeight="27.0" prefWidth="116.0" text="New Account" />
+      <Button fx:id="forgotPasswordButton" layoutX="514.0" layoutY="407.0" mnemonicParsing="false" onAction="#forgotPasswordButtonClicked" prefHeight="27.0" prefWidth="116.0" text="Forgot Password" />
+      <Label alignment="CENTER" layoutX="392.0" layoutY="39.0" prefHeight="38.0" prefWidth="116.0" text="eHill" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordTextField" layoutX="370.0" layoutY="210.0" prefHeight="38.0" prefWidth="182.0" />
+      <TextField fx:id="userNameTextField" layoutX="370.0" layoutY="130.0" prefHeight="38.0" prefWidth="182.0" />
+      <Label layoutX="259.0" layoutY="138.0" prefHeight="20.0" prefWidth="78.0" text="Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="210.0" prefHeight="20.0" prefWidth="78.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="quitButton" layoutY="1.0" mnemonicParsing="false" onAction="#quitButtonPressed" prefHeight="40.0" prefWidth="120.0" text="Quit" />
+      <Label fx:id="logInMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="86.0" prefHeight="27.0" prefWidth="302.0" text="For Security, 10 Log In Attempts Allowed!" />
+   </children>
+</Pane>
